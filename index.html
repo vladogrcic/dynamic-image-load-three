@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>iPhone Case</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		html, body {
+			font-family: Monospace;
+			color: #fff;
+			margin: 0px;
+			overflow: hidden;
+		}
+		#testing{
+			height: 650px;
+			width: 650px;
+		}
+		/*#case{
+			position: absolute;
+			right: 0px;
+		}*/
+
+	</style>
+</head>
+
+<body>
+
+
+<script src="js/three.js"></script>
+<script src="js/OBJLoader.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/imageUV.js">
+</script>//This is the test image
+<script src="js/mainScript.js"></script>
+<div id="testing">
+	<script>
+/*
+* elID 					= 		CSS id of the parent element where it'll insert itself.
+* envBackColor 			=		Color of the environment around the 3D object.
+* objBackColorInside 	=		Color of the part of object where you insert your phone.
+* objBackColorOutside 	=		Color of the part of object where you paint the image.
+* object3D				=		With this you can choose which object to show with this module, so you could just call on which phone you want to show all this.
+*
+* All of those properties except elID are optional, I've set default values for them. For the image, you put it in module3D.render_image() as an simple string argument.
+ */
+        module3D.initialize({elID: "testing", envBackColor: "#0047ab", objBackColorInside: "#ffffff", objBackColorOutside: "#FFF", object3D: "iPhone6"});
+		module3D.render_image(IMG);
+
+	</script>
+
+</div>
+</body>
+</html>
+
